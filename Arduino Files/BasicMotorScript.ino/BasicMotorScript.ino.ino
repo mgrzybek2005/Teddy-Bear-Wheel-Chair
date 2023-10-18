@@ -1,6 +1,6 @@
-int enA = 7;
-int in1A = 8;
-int in2A = 9;
+int enA = 5;
+int in1A = 7;
+int in2A = 6;
 
 
 void setup() {
@@ -12,6 +12,8 @@ void setup() {
   pinMode(in2A, OUTPUT);
 
   digitalWrite(enA, HIGH);
+
+  Serial.println("Begin");
 }
 
 void loop() {
@@ -19,7 +21,7 @@ void loop() {
 
   digitalWrite(in1A, HIGH);
   digitalWrite(in2A, LOW);
-  Serial.println("Spinning in one direction.");
+  Serial.println("HIGH LOW.");
 
   delay(1500);
 
@@ -31,7 +33,7 @@ void loop() {
   
   digitalWrite(in1A, LOW);
   digitalWrite(in2A, HIGH);
-  Serial.println("Spinning in one direction.");
+  Serial.println("LOW HIGH.");
 
   delay(1500);
 
