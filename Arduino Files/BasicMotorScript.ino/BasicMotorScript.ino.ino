@@ -1,7 +1,11 @@
-int enA = 5;
-int in1A = 7;
-int in2A = 6;
-
+// Motor A
+int enA = 13;
+int in1A = 12;
+int in2A = 11;
+// Motor B
+// int enB = 10;
+// int in1B = 9;
+// int in2B = 8;
 
 void setup() {
   // put your setup code here, to run once:
@@ -11,7 +15,13 @@ void setup() {
   pinMode(in1A, OUTPUT);
   pinMode(in2A, OUTPUT);
 
+  // pinMode(enB, OUTPUT);
+  // pinMode(in1B, OUTPUT);
+  // pinMode(in2B, OUTPUT);
+
+
   digitalWrite(enA, HIGH);
+  // digitalWrite(enB, LOW);
 
   Serial.println("Begin");
 }
@@ -21,25 +31,11 @@ void loop() {
 
   digitalWrite(in1A, HIGH);
   digitalWrite(in2A, LOW);
-  Serial.println("HIGH LOW.");
+  Serial.println("A: HIGH LOW.");
 
-  delay(1500);
+  // digitalWrite(in1B, LOW);
+  // digitalWrite(in2B, LOW);
+  // Serial.println("B: LOW LOW.");
 
-  digitalWrite(in1A, LOW);
-  digitalWrite(in2A, LOW);
-  Serial.println("Stopped.");\
 
-  delay(1500);
-  
-  digitalWrite(in1A, LOW);
-  digitalWrite(in2A, HIGH);
-  Serial.println("LOW HIGH.");
-
-  delay(1500);
-
-  digitalWrite(in1A, LOW);
-  digitalWrite(in2A, LOW);
-  Serial.println("Stopped.");
-
-  delay(1500);
 }
