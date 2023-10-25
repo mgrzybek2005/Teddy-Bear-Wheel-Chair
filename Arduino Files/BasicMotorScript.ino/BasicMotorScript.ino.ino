@@ -33,6 +33,19 @@ void loop() {
   digitalWrite(in2A, LOW);
   Serial.println("A: HIGH LOW.");
 
+  delay(3000);
+
+  digitalWrite(in1A, LOW);
+  digitalWrite(in2A, LOW);
+
+  delay(3000);
+
+  digitalWrite(in1A, LOW);
+  digitalWrite(in2A, HIGH);
+  Serial.println("A: LOW HIGH.");
+
+  delay(3000);
+
   // digitalWrite(in1B, LOW);
   // digitalWrite(in2B, LOW);
   // Serial.println("B: LOW LOW.");
