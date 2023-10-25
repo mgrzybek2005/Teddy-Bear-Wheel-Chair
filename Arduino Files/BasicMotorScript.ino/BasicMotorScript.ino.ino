@@ -46,6 +46,11 @@ void loop() {
 
   delay(3000);
 
+  digitalWrite(in1A, LOW);
+  digitalWrite(in2A, LOW);
+
+  delay(3000);
+
   // digitalWrite(in1B, LOW);
   // digitalWrite(in2B, LOW);
   // Serial.println("B: LOW LOW.");
